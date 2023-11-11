@@ -20,7 +20,7 @@ def user(name):
 @app.route("/admin")
 def admin():
     # Redirect to the home page using the url_for function
-    return redirect(url_for("home"))
+    return redirect(url_for("user", name="Admin"))
 
 # Run the Flask application if this script is executed directly
 if __name__ == "__main__":
